@@ -20,3 +20,5 @@ bindkey "^[OF" end-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
+alias genpass="openssl rand -base64 6"
+
