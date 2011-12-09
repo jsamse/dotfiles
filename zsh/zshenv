@@ -1,1 +1,4 @@
 PATH="$HOME/bin:$PATH"
+PRIVATESTORAGE="$HOME/.privatestorage"
+CREDENTIALS="$PRIVATESTORAGE/encrypted/credentials.gpg"
+

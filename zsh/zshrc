@@ -22,3 +22,7 @@ bindkey "^[[1;5C" forward-word
 
 alias genpass="openssl rand -base64 6"
 
+function getpass() gpg -d $CREDENTIALS |\
+  prop print $1 password |\
+  xclip -selection primary
+
