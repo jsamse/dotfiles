@@ -1,33 +1,3 @@
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/zencoding"]
-	path = vim/bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
-[submodule "vim/bundle/ack"]
-	path = vim/bundle/ack
-	url = git://github.com/mileszs/ack.vim.git
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/snippets"]
-	path = vim/bundle/snippets
-	url = git://github.com/carlosvillu/coffeScript-VIM-Snippets
-[submodule "vim/bundle/neco-ghc"]
-	path = vim/bundle/neco-ghc
-	url = git://github.com/ujihisa/neco-ghc.git
-[submodule "vim/bundle/neocomplcache"]
-	path = vim/bundle/neocomplcache
-	url = git://github.com/tosik/neocomplcache.git
-[submodule "vim/bundle/mako"]
-	path = vim/bundle/mako
-	url = git://github.com/sophacles/vim-bundle-mako.git
-[submodule "vim/bundle/command-t"]
-	path = vim/bundle/command-t
-	url = git://github.com/wincent/Command-T
 [submodule "vim/bundle/gnugp.vim"]
 	path = vim/bundle/gnugp.vim
 	url = git://github.com/vim-scripts/gnupg.vim.git
