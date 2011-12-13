@@ -1,27 +1,28 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set nocompatible
+set nocompatible " force setting to use features not compatible with vi
 
-syntax enable
-set encoding=utf-8
-set number
-set showcmd
-set undofile
+syntax enable " enable syntax highlighting
+set encoding=utf-8 " set encoding
+set number " show line numbers
+set showcmd " show incomplete commands
+set undofile " enables persistant undo between file reloads
 
 filetype plugin indent on
 
 "" Whitespace
-set nowrap
-set tabstop=2 shiftwidth=2
-set expandtab
-set backspace=indent,eol,start
+set nowrap " don't wrap lines
+set tabstop=2 " set how many columns a tab i worth
+set shiftwidth=2 " sets how many column will be shifted with << and >>
+set expandtab " always expand tab to spaces
+set backspace=indent,eol,start " enables backspacing through everything
 
 "" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch " highlights search matches
+set incsearch " start searching as soon as you type your first character
+set ignorecase " ignore case when searching
+set smartcase " do not ignore case when searching if at least one capital letter is used
 
 "" Unmap arrows
 noremap <Left>  <NOP>
