@@ -7,7 +7,9 @@ syntax enable " enable syntax highlighting
 set encoding=utf-8 " set encoding
 set number " show line numbers
 set showcmd " show incomplete commands
-set undofile " enables persistant undo between file reloads
+if v:version >= 703
+  set undofile " enables persistant undo between file reloads
+endif
 
 filetype plugin indent on
 
