@@ -21,6 +21,7 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
 alias genpass="openssl rand -base64 6"
+alias editledger="vim $LEDGER_FILE"
 
 function getpass() {
   if [ -x `which xclip` ]; then
