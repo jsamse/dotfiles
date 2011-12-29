@@ -1,4 +1,5 @@
-PATH="$HOME/bin:$PATH"
-PRIVATESTORAGE="$HOME/.privatestorage"
-CREDENTIALS="$PRIVATESTORAGE/encrypted/credentials.gpg"
+export PATH="$HOME/bin:$PATH"
+export PRIVATESTORAGE="$HOME/.privatestorage"
+export CREDENTIALS="$PRIVATESTORAGE/encrypted/credentials.gpg"
+export LEDGER_FILE="$PRIVATESTORAGE/ledger/ledger.dat"
 
