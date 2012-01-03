@@ -1,0 +1,70 @@
+// Install instructions:
+//
+// Copy this file to your /usr/share/X11/xkb/symbols directory.
+// You may need root privileges to do so.
+//
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "Dvorak international extended";
+
+    // Alphanumeric section
+
+    key <TLDE> { [ grave, asciitilde ] };
+
+    key <AE01> { [ 1,  exclam, exclamdown, U00B9 ] };
+    key <AE02> { [ 2,  at, U00B2 ]   };
+    key <AE03> { [ 3,  numbersign, U00B3 ] };
+    key <AE04> { [ 4,  dollar, currency, U00A3 ] };
+    key <AE05> { [ 5,  percent, EuroSign ] };
+    key <AE06> { [ 6,  dead_circumflex, U00BC ]};
+    key <AE07> { [ 7,  ampersand, U00BD ]  };
+    key <AE08> { [ 8,  asterisk, U00BE ] };
+    key <AE09> { [ 9,  parenleft, U2018 ]  };
+    key <AE10> { [ 0,  parenright, U2019 ] };
+    key <AE11> { [ bracketleft, braceleft, guillemotleft ] };
+    key <AE12> { [ bracketright, braceright, guillemotright ] };
+
+    key <AD01> { [ apostrophe, quotedbl, U00E5, U00C5 ] };
+    key <AD02> { [ comma,  less, U00E4, U00C4 ]  };
+    key <AD03> { [ period, greater, U00F6, U00D6 ] };
+    key <AD04> { [ p,  P, paragraph, degree ]  };
+    key <AD05> { [ y,  Y, U00FC, U00DC ] };
+    key <AD06> { [ f,  F   ] };
+    key <AD07> { [ g,  G, U00E7, U00C7 ] };
+    key <AD08> { [ c,  C, copyright, U00A2 ] };
+    key <AD09> { [ r,  R, registered ] };
+    key <AD10> { [ l,  L   ] };
+    key <AD11> { [ slash,  question, questiondown ]};
+    key <AD12> { [ equal,  plus, U00D7, U00F7 ]  };
+
+    key <AC01> { [ a,  A, U00E1, U00C1 ] };
+    key <AC02> { [ o,  O, U00E5, U00C5 ] };
+    key <AC03> { [ e,  E, U00E9, U00E9 ] };
+    key <AC04> { [ u,  U, U00FA, U00DA ] };
+    key <AC05> { [ i,  I, U00ED, U00CD ] };
+    key <AC06> { [ d,  D, U00F0, U00D0 ] };
+    key <AC07> { [ h,  H     ] };
+    key <AC08> { [ t,  T, U00FE, U00DE ] };
+    key <AC09> { [ n,  N, U00F1, U00D1 ] };
+    key <AC10> { [ s,  S, ssharp, section ]  };
+    key <AC11> { [ minus,  underscore, yen ] };
+    key <BKSL> { [ backslash, bar, U00F8, brokenbar ]  };
+
+    key <AB01> { [ semicolon, colon,ae, AE ] };
+    key <AB02> { [ q,  Q, U00F8, U00D8 ] };
+    key <AB03> { [ j,  J     ] };
+    key <AB04> { [ k,  K   ] };
+    key <AB05> { [ x,  X   ] };
+    key <AB06> { [ b,  B   ] };
+    key <AB07> { [ m,  M, U00B5  ] };
+    key <AB08> { [ w,  W   ] };
+    key <AB09> { [ v,  V   ] };
+    key <AB10> { [ z,  Z   ] };
+
+    key <CAPS> { [ Hyper_L ] };
+
+    include "level3(ralt_switch)"
+};
+
