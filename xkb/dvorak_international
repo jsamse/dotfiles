@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     key <AE03> { [ 3,  numbersign, U00B3 ] };
     key <AE04> { [ 4,  dollar, currency, U00A3 ] };
     key <AE05> { [ 5,  percent, EuroSign ] };
-    key <AE06> { [ 6,  dead_circumflex, U00BC ]};
+    key <AE06> { [ 6,  asciicircum, U00BC ]};
     key <AE07> { [ 7,  ampersand, U00BD ]  };
     key <AE08> { [ 8,  asterisk, U00BE ] };
     key <AE09> { [ 9,  parenleft, U2018 ]  };
@@ -39,7 +39,7 @@ xkb_symbols "basic" {
     key <AD11> { [ slash,  question, questiondown ]};
     key <AD12> { [ equal,  plus, U00D7, U00F7 ]  };
 
-    key <AC01> { [ a,  A, U00E1, U00C1 ] };
+    key <AC01> { [ a,  A, asciitilde, U00C1 ] };
     key <AC02> { [ o,  O, bracketleft ] };
     key <AC03> { [ e,  E, braceleft ] };
     key <AC04> { [ u,  U, parenleft ] };
