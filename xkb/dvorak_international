@@ -40,14 +40,14 @@ xkb_symbols "basic" {
     key <AD12> { [ equal,  plus, U00D7, U00F7 ]  };
 
     key <AC01> { [ a,  A, U00E1, U00C1 ] };
-    key <AC02> { [ o,  O, U00E5, U00C5 ] };
-    key <AC03> { [ e,  E, U00E9, U00E9 ] };
-    key <AC04> { [ u,  U, U00FA, U00DA ] };
+    key <AC02> { [ o,  O, bracketleft ] };
+    key <AC03> { [ e,  E, braceleft ] };
+    key <AC04> { [ u,  U, parenleft ] };
     key <AC05> { [ i,  I, U00ED, U00CD ] };
     key <AC06> { [ d,  D, U00F0, U00D0 ] };
-    key <AC07> { [ h,  H     ] };
-    key <AC08> { [ t,  T, U00FE, U00DE ] };
-    key <AC09> { [ n,  N, U00F1, U00D1 ] };
+    key <AC07> { [ h,  H, parenright ] };
+    key <AC08> { [ t,  T, braceright ] };
+    key <AC09> { [ n,  N, bracketright ] };
     key <AC10> { [ s,  S, ssharp, section ]  };
     key <AC11> { [ minus,  underscore, yen ] };
     key <BKSL> { [ backslash, bar, U00F8, brokenbar ]  };
