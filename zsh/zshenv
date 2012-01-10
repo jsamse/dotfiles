@@ -3,5 +3,5 @@ export EDITOR="/usr/bin/vim"
 export DOTFILES="$HOME/.dotfiles"
 export PRIVATESTORAGE="$HOME/.privatestorage"
 export CREDENTIALS="$PRIVATESTORAGE/encrypted/credentials.gpg"
-export LEDGER_FILE="$PRIVATESTORAGE/ledger/ledger.dat"
+export LEDGER_FILE="$PRIVATESTORAGE/ledger/ledger"
 
