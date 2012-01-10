@@ -20,6 +20,7 @@ bindkey "^[OF" end-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
+alias ls="ls --color=auto"
 alias genpass="openssl rand -base64 6"
 alias editledger="vim $LEDGER_FILE"
 
