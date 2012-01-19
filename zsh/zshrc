@@ -1,18 +1,24 @@
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'l:|=* r:|=*'
+zstyle :compinstall filename '/home/jonas/.zshrc'
+
+autoload -Uz compinit promptinit
+
+compinit
+promptinit
+prompt walters
+
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-setopt appendhistory extendedglob completealiases
-
+setopt appendhistory completealiases
+unsetopt beep
 bindkey -e
-
-# zstyle :compinstall filename '/home/jonsa/.zshrc'
-
-autoload -Uz compinit promptinit
-compinit
-promptinit
-
-prompt walters
 
 # keybindings
 bindkey "^[OH" beginning-of-line
@@ -21,6 +27,7 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
 alias ls="ls --color=auto"
+alias untar="tar -xvf"
 alias genpass="openssl rand -base64 6"
 alias editledger="vim $LEDGER_FILE"
 
