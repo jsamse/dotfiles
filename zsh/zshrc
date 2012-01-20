@@ -28,6 +28,7 @@ bindkey "^[[1;5C" forward-word
 
 alias ls="ls --color=auto"
 alias untar="tar -xvf"
+alias lock="gnome-screensaver-command -l"
 alias genpass="openssl rand -base64 6"
 alias editledger="vim $LEDGER_FILE"
 
