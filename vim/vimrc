@@ -13,12 +13,6 @@ endif
 
 filetype plugin indent on
 
-"" Colorscheme
-set background=light
-set t_Co=16
-let g:solarized_termcolors=16
-colorscheme solarized
-
 "" Whitespace
 set nowrap " don't wrap lines
 set tabstop=2 " set how many columns a tab i worth
