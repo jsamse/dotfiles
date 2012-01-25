@@ -5,3 +5,8 @@ export PRIVATESTORAGE="$HOME/.privatestorage"
 export CREDENTIALS="$PRIVATESTORAGE/encrypted/credentials.gpg"
 export LEDGER_FILE="$PRIVATESTORAGE/ledger/ledger"
 
+if [ -e "$HOME/.zshenv.local" ]
+then
+  source "$HOME/.zshenv.local"
+fi
+

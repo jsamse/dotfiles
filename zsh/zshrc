@@ -28,6 +28,7 @@ bindkey "^[[1;5C" forward-word
 
 alias ls="ls --color=auto"
 alias untar="tar -xvf"
+alias gitk="gitk --all"
 alias lock="gnome-screensaver-command -l"
 alias genpass="openssl rand -base64 6"
 alias editledger="vim $LEDGER_FILE"
@@ -50,4 +51,9 @@ function pullchanges() {
   git pull
   cd -
 }
+
+if [ -e "$HOME/.zshrc.local" ]
+then
+  source "$HOME/.zshrc.local"
+fi
 
