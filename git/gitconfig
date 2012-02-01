@@ -1,0 +1,13 @@
+[alias]
+  co = checkout
+  mpull = !"git checkout master; git pull --ff-only; git checkout local"
+  mpush = !"git checkout master; git merge --ff-only local; git push; git checkout local"
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[user]
+  name = Jonas Samuelsson
+	email = jonaspetter@gmail.com
+
