@@ -26,7 +26,7 @@ bindkey "^[OF" end-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
-alias ls="ls --color=auto"
+alias ls="ls -l --color=auto"
 alias untar="tar -xvf"
 alias gitk="gitk --all"
 alias lock="gnome-screensaver-command -l"
