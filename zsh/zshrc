@@ -31,7 +31,7 @@ alias untar="tar -xvf"
 alias gitk="gitk --all"
 alias lock="gnome-screensaver-command -l"
 alias genpass="openssl rand -base64 6"
-alias editledger="vim $LEDGER_FILE"
+alias rehash="source ~/.zshenv && source ~/.zshrc && rehash"
 
 function getpass() {
   if [ -x `which xclip` ]; then
