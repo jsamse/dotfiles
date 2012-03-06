@@ -10,4 +10,6 @@
 [user]
   name = Jonas Samuelsson
 	email = jonaspetter@gmail.com
+[push]
+  default = tracking
 
