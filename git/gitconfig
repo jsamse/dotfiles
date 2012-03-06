@@ -2,6 +2,7 @@
   co = checkout
   mpull = !"git checkout master; git pull --ff-only; git checkout local"
   mpush = !"git checkout master; git merge --ff-only local; git push; git checkout local"
+  ff = pull --ff-only
 [color]
   branch = auto
   diff = auto
