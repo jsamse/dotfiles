@@ -37,3 +37,8 @@ inoremap <Up>    <NOP>
 noremap <Down>  <NOP>
 inoremap <Down>  <NOP>
 
+if has('gui_running')
+  set background=light
+  colorscheme solarized
+endif
+
