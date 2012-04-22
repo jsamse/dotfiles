@@ -28,9 +28,8 @@ session = /mnt/storageB/session
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
 schedule = watch_directory,5,5,"load_start=/mnt/storageB/watch/movies/*.torrent,d.set_custom1=/mnt/storageB/downloads/movies/"
-schedule = watch_directory,5,5,"load_start=/mnt/storageB/watch/shows/*.torrent,d.set_custom1=/mnt/storageB/downloads/shows/"
-schedule = watch_directory,5,5,"load_start=/mnt/storageB/watch/misc/*.torrent,d.set_custom1=/mnt/storageB/downloads/misc/"
-schedule = untied_directory,5,5,close_untied=
+schedule = watch_directory_2,5,5,"load_start=/mnt/storageB/watch/shows/*.torrent,d.set_custom1=/mnt/storageB/downloads/shows/"
+schedule = watch_directory_3,5,5,"load_start=/mnt/storageB/watch/misc/*.torrent,d.set_custom1=/mnt/storageB/downloads/misc/"
 
 # Move completed torrents
 system.method.set_key = event.download.finished,move_complete,"d.set_directory=$d.get_custom1= ;execute=mv,-u,$d.get_base_path=,$d.get_custom1="
