@@ -32,7 +32,7 @@ schedule = watch_directory_2,5,5,"load_start=/mnt/storageB/watch/shows/*.torrent
 schedule = watch_directory_3,5,5,"load_start=/mnt/storageB/watch/misc/*.torrent,d.set_custom1=/mnt/storageB/downloads/misc/"
 
 # Move completed torrents
-system.method.set_key = event.download.finished,move_complete,"d.set_directory=$d.get_custom1= ;execute=mv,-u,$d.get_base_path=,$d.get_custom1="
+system.method.set_key = event.download.finished,move_complete,"d.set_directory=$d.get_custom1=;execute=mv,-u,$d.get_base_path=,$d.get_custom1="
 
 # Close torrents when diskspace is low.
 #schedule = low_diskspace,5,60,close_low_diskspace=100M
