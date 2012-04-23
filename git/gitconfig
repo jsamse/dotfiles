@@ -3,6 +3,7 @@
   mpull = !"git checkout master; git pull --ff-only; git checkout local"
   mpush = !"git checkout master; git merge --ff-only local; git push; git checkout local"
   ff = pull --ff-only
+  graph = log --decorate --oneline --graph --all
 [color]
   branch = auto
   diff = auto
