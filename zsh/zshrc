@@ -33,6 +33,10 @@ alias lock="gnome-screensaver-command -l"
 alias genpass="openssl rand -base64 6"
 alias rehash="source ~/.zshenv && source ~/.zshrc && rehash"
 
+function calc() {
+  echo `perl -e "print $*"`
+}
+
 function getpass() {
   if [ -x `which xclip` ]; then
     gpg -d $CREDENTIALS | prop print $1 password | xclip -selection primary
