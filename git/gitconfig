@@ -1,9 +1,7 @@
 [alias]
   co = checkout
-  mpull = !"git checkout master; git pull --ff-only; git checkout local"
-  mpush = !"git checkout master; git merge --ff-only local; git push; git checkout local"
   ff = pull --ff-only
-  graph = log --decorate --oneline --graph --all
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
   branch = auto
   diff = auto
