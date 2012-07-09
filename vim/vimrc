@@ -1,14 +1,25 @@
-call pathogen#runtime_append_all_bundles()
+filetype off
+
+call pathogen#infect()
 call pathogen#helptags()
+
+filetype plugin indent on
 
 set nocompatible " force setting to use features not compatible with vi
 
 syntax enable " enable syntax highlighting
 set encoding=utf-8 " set encoding
-set number " show line numbers
+set ttyfast " draw more to terminal
 set showcmd " show incomplete commands
 set hidden " enable hidden buffers by default
+set wildmenu " show a list of possible completions when using <TAB>
+set wildmode=list:longest " longest list
+" set cursorline " a line where the cursor is
+set ruler " row, column in bottom right
+set laststatus=2 " always a status line
+
 if v:version >= 703
+  set relativenumber " show relative line numbers
   set undofile " enables persistant undo between file reloads
 endif
 
