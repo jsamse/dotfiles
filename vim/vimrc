@@ -55,3 +55,5 @@ if has('gui_running')
   set guioptions-=r " remove right scroll bar
   set guioptions-=L " remove left scroll bar
 endif
+
+map <F2> :FufFile **/<CR>
