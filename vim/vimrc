@@ -53,3 +53,9 @@ if has('gui_running')
   set guioptions-=r " remove right scroll bar
   set guioptions-=L " remove left scroll bar
 endif
+
+"" Command-T
+set wildignore+=daemons " Ignore mostphotos.com/daemons because it has A LOT of files.
+let g:CommandTMaxFiles=1000000
+let g:CommandTMaxCachedDirectories=0
+let g:CommandTMatchWindowReverse=1
