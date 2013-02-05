@@ -11,5 +11,4 @@
   name = Jonas Samuelsson
 	email = jonaspetter@gmail.com
 [push]
-  default = tracking
-
+  default = current
