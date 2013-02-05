@@ -1,11 +1,18 @@
+set nocompatible " force setting to use features not compatible with vi
 filetype off
 
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/gnupg.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 
 filetype plugin indent on
-
-set nocompatible " force setting to use features not compatible with vi
 
 syntax enable " enable syntax highlighting
 set encoding=utf-8 " set encoding
@@ -17,6 +24,8 @@ set wildmode=list:longest " longest list
 " set cursorline " a line where the cursor is
 set ruler " row, column in bottom right
 set laststatus=2 " always a status line
+au BufWritePre * :set binary | set noeol " Save files in binary mode to be sure you save exactly what you see
+au BufWritePost * :set nobinary | set eol " Reset to standard behavior after file is saved
 
 if v:version >= 703
   set relativenumber " show relative line numbers
@@ -38,16 +47,6 @@ set incsearch " start searching as soon as you type your first character
 set ignorecase " ignore case when searching
 set smartcase " do not ignore case when searching if at least one capital letter is used
 
-"" Unmap arrows
-noremap <Left>  <NOP>
-inoremap <Left>  <NOP>
-noremap <Right> <NOP>
-inoremap <Right> <NOP>
-noremap <Up>    <NOP>
-inoremap <Up>    <NOP>
-noremap <Down>  <NOP>
-inoremap <Down>  <NOP>
-
 if has('gui_running')
   set background=light
   colorscheme solarized
@@ -56,4 +55,3 @@ if has('gui_running')
   set guioptions-=r " remove right scroll bar
   set guioptions-=L " remove left scroll bar
 endif
-
