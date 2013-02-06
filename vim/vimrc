@@ -54,6 +54,8 @@ if has('gui_running')
   set guioptions-=L " remove left scroll bar
 endif
 
+match ErrorMsg '\%>100v.\+' " Highlight lines longer than 100 chars.
+
 "" Command-T
 set wildignore+=daemons " Ignore mostphotos.com/daemons because it has A LOT of files.
 let g:CommandTMaxFiles=1000000
