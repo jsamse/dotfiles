@@ -22,11 +22,10 @@ set wildmode=list:longest " longest list
 " set cursorline " a line where the cursor is
 set ruler " row, column in bottom right
 set laststatus=2 " always a status line
-au BufWritePre * :set binary | set noeol " Save files in binary mode to be sure you save exactly what you see
-au BufWritePost * :set nobinary | set eol " Reset to standard behavior after file is saved
+set number
 
 if v:version >= 703
-  set relativenumber " show relative line numbers
+  "set relativenumber " show relative line numbers
   set undofile " enables persistant undo between file reloads
 endif
 
