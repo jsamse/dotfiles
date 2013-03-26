@@ -3,12 +3,11 @@
   ff = pull --ff-only
   lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
-  branch = auto
-  diff = auto
-  interactive = auto
-  status = auto
+	ui = true
 [user]
   name = Jonas Samuelsson
 	email = jonaspetter@gmail.com
 [push]
   default = current
+[grep]
+	lineNumber = true
