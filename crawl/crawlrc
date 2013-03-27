@@ -1,0 +1,76 @@
+tile_window_width = 1800
+
+bindkey = [h] CMD_MOVE_LEFT
+bindkey = [w] CMD_MOVE_DOWN
+bindkey = [c] CMD_MOVE_UP
+bindkey = [n] CMD_MOVE_RIGHT
+bindkey = [g] CMD_MOVE_UP_LEFT
+bindkey = [r] CMD_MOVE_UP_RIGHT
+bindkey = [m] CMD_MOVE_DOWN_LEFT
+bindkey = [v] CMD_MOVE_DOWN_RIGHT
+
+bindkey = [H] CMD_RUN_LEFT
+bindkey = [W] CMD_RUN_DOWN
+bindkey = [C] CMD_RUN_UP
+bindkey = [N] CMD_RUN_RIGHT
+bindkey = [G] CMD_RUN_UP_LEFT
+bindkey = [R] CMD_RUN_UP_RIGHT
+bindkey = [M] CMD_RUN_DOWN_LEFT
+bindkey = [V] CMD_RUN_DOWN_RIGHT
+
+bindkey = [h] CMD_TARGET_LEFT
+bindkey = [w] CMD_TARGET_DOWN
+bindkey = [c] CMD_TARGET_UP
+bindkey = [n] CMD_TARGET_RIGHT
+bindkey = [g] CMD_TARGET_UP_LEFT
+bindkey = [r] CMD_TARGET_UP_RIGHT
+bindkey = [m] CMD_TARGET_DOWN_LEFT
+bindkey = [v] CMD_TARGET_DOWN_RIGHT
+
+bindkey = [H] CMD_TARGET_DIR_LEFT
+bindkey = [W] CMD_TARGET_DIR_DOWN
+bindkey = [C] CMD_TARGET_DIR_UP
+bindkey = [N] CMD_TARGET_DIR_RIGHT
+bindkey = [G] CMD_TARGET_DIR_UP_LEFT
+bindkey = [R] CMD_TARGET_DIR_UP_RIGHT
+bindkey = [M] CMD_TARGET_DIR_DOWN_LEFT
+bindkey = [V] CMD_TARGET_DIR_DOWN_RIGHT
+
+bindkey = [h] CMD_MAP_MOVE_LEFT
+bindkey = [w] CMD_MAP_MOVE_DOWN
+bindkey = [c] CMD_MAP_MOVE_UP
+bindkey = [n] CMD_MAP_MOVE_RIGHT
+bindkey = [g] CMD_MAP_MOVE_UP_LEFT
+bindkey = [r] CMD_MAP_MOVE_UP_RIGHT
+bindkey = [m] CMD_MAP_MOVE_DOWN_LEFT
+bindkey = [v] CMD_MAP_MOVE_DOWN_RIGHT
+
+bindkey = [H] CMD_MAP_JUMP_LEFT
+bindkey = [W] CMD_MAP_JUMP_DOWN
+bindkey = [C] CMD_MAP_JUMP_UP
+bindkey = [N] CMD_MAP_JUMP_RIGHT
+bindkey = [G] CMD_MAP_JUMP_UP_LEFT
+bindkey = [R] CMD_MAP_JUMP_UP_RIGHT
+bindkey = [M] CMD_MAP_JUMP_DOWN_LEFT
+bindkey = [V] CMD_MAP_JUMP_DOWN_RIGHT
+
+bindkey = [^H] CMD_OPEN_DOOR_LEFT
+bindkey = [^W] CMD_OPEN_DOOR_DOWN
+bindkey = [^C] CMD_OPEN_DOOR_UP
+bindkey = [^N] CMD_OPEN_DOOR_RIGHT
+bindkey = [^G] CMD_OPEN_DOOR_UP_LEFT
+bindkey = [^R] CMD_OPEN_DOOR_UP_RIGHT
+bindkey = [^M] CMD_OPEN_DOOR_DOWN_LEFT
+bindkey = [^V] CMD_OPEN_DOOR_DOWN_RIGHT
+
+bindkey = [t] CMD_TARGET_DESCRIBE
+bindkey = [t] CMD_SEARCH
+bindkey = [T] CMD_REST
+bindkey = [^T] CMD_INTERLEVEL_TRAVEL
+bindkey = [y] CMD_SHOUT
+bindkey = [Y] CMD_TOGGLE_FRIENDLY_PICKUP
+bindkey = [l] CMD_READ
+bindkey = [u] CMD_BUTCHER
+bindkey = [s] CMD_DISPLAY_SKILLS
+bindkey = [S] CMD_MEMORISE_SPELL
+bindkey = [-] CMD_SAVE_GAME
