@@ -63,6 +63,8 @@ bindkey = [^R] CMD_OPEN_DOOR_UP_RIGHT
 bindkey = [^M] CMD_OPEN_DOOR_DOWN_LEFT
 bindkey = [^V] CMD_OPEN_DOOR_DOWN_RIGHT
 
+bindkey = [b] CMD_EVOKE_WIELDED
+bindkey = [B] CMD_EVOKE
 bindkey = [t] CMD_TARGET_DESCRIBE
 bindkey = [t] CMD_SEARCH
 bindkey = [T] CMD_REST
