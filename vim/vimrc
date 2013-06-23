@@ -24,7 +24,21 @@ set ruler " row, column in bottom right
 set laststatus=2 " always a status line
 set number
 
+if isdirectory($HOME . '/.vim/backup') == 0
+  :silent !mkdir -p ~/.vim/backup >/dev/null 2>&1
+endif
+set backupdir=~/.vim/backup/
+
+if isdirectory($HOME . '/.vim/swap') == 0
+  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
+endif
+set directory=~/.vim/swap//
+
 if v:version >= 703
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo >/dev/null 2>&1
+  endif
+  set undodir=~/.vim/undo//
   "set relativenumber " show relative line numbers
   set undofile " enables persistant undo between file reloads
 endif
@@ -56,7 +70,17 @@ endif
 match ErrorMsg '\%>100v.\+' " Highlight lines longer than 100 chars.
 
 "" Command-T
-set wildignore+=daemons " Ignore mostphotos.com/daemons because it has A LOT of files.
+set wildignore+=daemons/3rdparty " Ignore mostphotos.com/daemons because it has A LOT of files.
+set wildignore+=daemons/lib " Ignore mostphotos.com/daemons because it has A LOT of files.
 let g:CommandTMaxFiles=1000000
 let g:CommandTMaxCachedDirectories=0
 let g:CommandTMatchWindowReverse=1
+
+"" Go
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+autocmd BufWritePre *.go Fmt
+

@@ -8,6 +8,6 @@
   name = Jonas Samuelsson
 	email = jonaspetter@gmail.com
 [push]
-  default = current
+  default = simple
 [grep]
 	lineNumber = true
