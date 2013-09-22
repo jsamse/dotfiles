@@ -88,3 +88,5 @@ filetype plugin indent on
 syntax on
 autocmd BufWritePre *.go Fmt
 
+"" NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
