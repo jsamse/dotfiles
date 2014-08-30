@@ -1,19 +1,30 @@
 set nocompatible " force setting to use features not compatible with vi
+set encoding=utf-8 " set encoding
+
+" Start NeoBundle
 filetype off
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'gmarik/vundle'
+" NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'vim-scripts/gnupg.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ervandew/supertab'
+" NeoBundle 'https://github.com/jnwhiteh/vim-golang'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'jtratner/vim-flavored-markdown'
+NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'tpope/vim-obsession'
+NeoBundle 'kien/ctrlp.vim'
+call neobundle#end()
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/gnupg.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'https://github.com/Shougo/unite.vim'
-
+" Enable all plugins
 filetype plugin indent on
 
 syntax enable " enable syntax highlighting
-set encoding=utf-8 " set encoding
 set ttyfast " draw more to terminal
 set showcmd " show incomplete commands
 set hidden " enable hidden buffers by default
@@ -63,21 +74,29 @@ if &diff
 endif
 
 if has('gui_running')
-  set background=light
-  colorscheme solarized
+  set background=dark
+  " colorscheme solarized
   set guioptions-=m " remove menu bar
   set guioptions-=T " remove toolbar
   set guioptions-=r " remove right scroll bar
   set guioptions-=L " remove left scroll bar
+  set guifont=Monospace\ 16
 endif
-
-"" Go
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
-autocmd BufWritePre *.go Fmt
 
 "" NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
+
+"" NeoBundle
+NeoBundleCheck
+
+"" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+"" Github markdown
+au BufNewFile,BufRead *.md set filetype=ghmarkdown
+
+"" CtrlP
+let g:ctrlp_cmd = 'CtrlPBuffer'
+
+"" Close buffer without closing window
+nnoremap <C-c> :bp\|bd #<CR>
