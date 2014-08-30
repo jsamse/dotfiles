@@ -2,6 +2,7 @@
   co = checkout
   ff = pull --ff-only
   lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  srp = !git stash && git pull --rebase && git stash pop
 [color]
 	ui = true
 [user]
