@@ -19,6 +19,8 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vim-scripts/BufOnly.vim'
+NeoBundle 'rust-lang/rust.vim'
 call neobundle#end()
 
 " Enable all plugins
@@ -100,6 +102,9 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 
 "" Close buffer without closing window
 nnoremap <C-c> :bp\|bd #<CR>
+
+"" vim-go
+let g:go_fmt_command = "goimports"
 
 "" Set leader
 let mapleader = "\<Space>"
