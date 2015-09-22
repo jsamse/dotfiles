@@ -73,7 +73,7 @@ set ignorecase " ignore case when searching
 set smartcase " do not ignore case when searching if at least one capital letter is used
 
 if &diff
-  colorscheme evening
+  colorscheme desert
 endif
 
 if has('gui_running')
