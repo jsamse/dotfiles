@@ -22,6 +22,8 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-scripts/BufOnly.vim'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'mileszs/ack.vim'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'tpope/vim-sensible'
 call neobundle#end()
 
 " Enable all plugins
@@ -130,3 +132,23 @@ set wildignore+=*/node_modules/*,*.deb,*.a,*.zip
 
 "" Ack with ag
 let g:ackprg = 'ag --nogroup --nocolor --column --ignore node_modules'
+
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://sunaku.github.io/vim-256color-bce.html
+  set t_ut=
+endif
+
+"" Örjans cool stuff
+set nofoldenable                       " Disable folds
+set listchars=eol:↵,tab:→\             " List chars for end of line and tabs
+set listchars+=trail:·                 " + trailing white-space
+set listchars+=extends:⇉,precedes:⇇    " + side scrolling
+set fillchars=vert:\│,fold:·
+
+" Jump to last known (valid) editing position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+" F4: Toggle list (display unprintable characters).
+nnoremap <silent> <F4> :setl list!<Bar>setl list?<CR>
