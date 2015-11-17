@@ -109,6 +109,7 @@ nnoremap <C-c> :bp\|bd #<CR>
 let g:go_fmt_command = "goimports"
 
 "" Set leader
+nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"
 nnoremap <Leader>f :NERDTreeFind<CR>
 nnoremap <Leader>o :CtrlPMixed<CR>
