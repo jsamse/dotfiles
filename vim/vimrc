@@ -3,28 +3,27 @@ set encoding=utf-8 " set encoding
 
 " Start NeoBundle
 filetype off
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'gmarik/vundle'
-" NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'vim-scripts/gnupg.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'ervandew/supertab'
-" NeoBundle 'https://github.com/jnwhiteh/vim-golang'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'jtratner/vim-flavored-markdown'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tpope/vim-obsession'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'vim-scripts/BufOnly.vim'
-NeoBundle 'rust-lang/rust.vim'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'tpope/vim-sensible'
-call neobundle#end()
+set runtimepath+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-scripts/gnupg.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'chriskempson/base16-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-obsession'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-sensible'
+
+call vundle#end()
 
 " Enable all plugins
 filetype plugin indent on
@@ -90,9 +89,6 @@ endif
 
 "" NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
-
-"" NeoBundle
-NeoBundleCheck
 
 "" SuperTab
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
