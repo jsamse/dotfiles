@@ -1,0 +1,52 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+#
+# Base16 Shell
+#
+
+BASE16_SHELL="$HOME/src/dotfiles/shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+
+#
+# Aliases
+#
+
+alias ls='ls --color=auto'
+alias reboot='killall --wait --quiet vim; reboot'
+alias poweroff='killall --wait --quiet vim; poweroff'
+
+#
+# Prompt
+#
+
+PS1='[\u@\h \W]\$ '
+
+#
+# History
+#
+
+shopt -s histappend
+HISTSIZE=1000000
+HISTCONTROL='erasedups:ignorespace'
+HISTIGNORE='cd:ls'
+PROMPT_COMMAND='history -a; echo $PWD > ~/.last_working_directory; mkdir -p "$HOME/.bash_history_directories/$PWD"; export HISTFILE="$HOME/.bash_history_directories/$PWD/bash_history.txt"; history -c; history -r'
+
+
+mkdir -p "$HOME/.bash_history_directories/$PWD"
+HISTFILE="$HOME/.bash_history_directories/$PWD/bash_history.txt"
+
+function gh() {
+  ag $1 "$HOME/.bash_history_directories"
+}
+
+#
+# Environment variables
+#
+
+export EDITOR="vim"

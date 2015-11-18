@@ -56,7 +56,7 @@
 URxvt.font: a14
 URxvt.insecure:             true
 URxvt.loginShell:           true
-URxvt.saveLines:            0
+URxvt.saveLines:            10000
 URxvt.mapAlert:             true
 URxvt.visualBell:           true
 URxvt.urgentOnBell:         true
