@@ -1,9 +1,5 @@
 ! Set font
-*faceName: Monospace:size=11:antialias=true:autohint=false
-
-! URxvt config
-!URxvt.scrollBar: false
-URxvt.font: xft: Monospace:size=11:antialias=true:autohint=false
+*faceName: a14
 
 ! Base16 Default
 ! Scheme: Chris Kempson (http://chriskempson.com)
@@ -56,29 +52,14 @@ URxvt.font: xft: Monospace:size=11:antialias=true:autohint=false
 *.color20:      base04
 *.color21:      base06
 
-! orions Xresources urxvt
-
-!! general
+! URxvt config
+URxvt.font: a14
 URxvt.insecure:             true
 URxvt.loginShell:           true
-URxvt.saveLines:            65536
-! useful for irc beeps
+URxvt.saveLines:            0
 URxvt.mapAlert:             true
 URxvt.visualBell:           true
 URxvt.urgentOnBell:         true
-! URxvt.underlineColor:       #729FCF
-
-!! ui
-! URxvt.font:                 xft:Mono:size=11
-! URxvt.boldFont:             xft:Mono:bold:pixelsize=11
-! URxvt.italicFont:           xft:Mono:italic:autohint=true
-! URxvt.boldItalicFont:       xft:Mono:bold:italic:autohint=true
-
-!URxvt.font: xft:Inconsolata\ for\ Powerline:size=10, xft:DejaVu\ Sans\ Mono:size=10.5
-!URxvt.boldFont: xft:Inconsolata\ for\ Powerline:size=10, xft:DejaVu\ Sans\ Mono:size=10.5
-!URxvt.italicFont: xft:Inconsolata\ for\ Powerline:size=10, xft:DejaVu\ Sans\ Mono:size=10.5
-!URxvt.boldItalicFont: xft:Inconsolata\ for\ Powerline:size=10, xft:DejaVu\ Sans\ Mono:size=10.5
-!URxvt.letterSpace: -1
 
 URxvt.scrollBar:            false
 URxvt.scrollBar_floating:   true
@@ -89,23 +70,8 @@ URxvt.scrollTtyOutput:      false
 URxvt.scrollWithBuffer:     true
 URxvt.transpscrollbar:      true
 URxvt.secondaryScroll:      true
-
-!URxvt.transparent:      	true
-!URxvt.shading:          	40
 URxvt.internalBorder:  	 	2
 URxvt.externalBorder:   	2
-
-!! extensions
-!URxvt.preeditType: OnTheSpot,None
-!URxvt.perl-ext-common: default,matcher,searchable-scrollback,selection-popup,xim-onthespot,font-size
-!URxvt.urlLauncher: /usr/bin/x-www-browser
-
-!! font size plugin
-!! https://github.com/majutsushi/urxvt-font-size
-!URxvt.keysym.C-Up:     perl:font-size:increase
-!URxvt.keysym.C-Down:   perl:font-size:decrease
-!URxvt.keysym.C-S-Up:   perl:font-size:incglobal
-!URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
 ! disable annoying Ctrl-Shift menu
 ! http://wilmer.gaa.st/blog/archives/36-rxvt-unicode-and-ISO-14755-mode.html
