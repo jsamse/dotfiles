@@ -158,4 +158,4 @@ bar {
 }
 
 # Lock screen
-bindsym $mod+Control+Delete exec "i3lock"
+bindsym $mod+Control+Delete exec "i3lock -c 000000"
