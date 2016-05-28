@@ -159,3 +159,6 @@ bar {
 
 # Lock screen
 bindsym $mod+Control+Delete exec "i3lock -c 000000"
+
+# Don't let mouse set focus
+focus_follows_mouse no
