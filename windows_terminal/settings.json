@@ -42,6 +42,13 @@
                 "hidden": false
             },
             {
+                "guid": "{e5dee0ca-8a0e-4acb-9e9d-68ec6ceefb73}",
+                "name": "Arch",
+                "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" --login -i -l -c \"ssh arch\"",
+                "icon" : "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico",
+                "hidden": false
+            },
+            {
                 // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
